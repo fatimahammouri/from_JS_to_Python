@@ -42,7 +42,14 @@ def get_range(start, stop):
     return nums
 
 def censor_vowels(word):
-    pass  # TODO: replace this line with your code
+    chars = []
+
+    for letter in word:
+        if letter in 'aeiou':
+            chars.append('*')
+        else:
+            chars.append(letter)
+    return ''.join(chars)
 
 
 def snake_to_camel(string):
