@@ -17,7 +17,15 @@ def get_all_evens(nums):
     return even_nums
 
 def get_odd_indices(items):
-    pass  # TODO: replace this line with your code
+    result = []
+    for index in range(len(items)): 
+        # the solution is printing the even-index items
+        if index % 2 != 0:
+            result.append(items[index])
+    
+    return result
+    print(result)
+
 
 
 def print_as_numbered_list(items):
