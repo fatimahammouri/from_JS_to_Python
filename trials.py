@@ -35,10 +35,11 @@ def print_as_numbered_list(items):
         i += 1
  
 
-
 def get_range(start, stop):
-    pass  # TODO: replace this line with your code
-
+    nums = []
+    for num in range(start, stop):
+        nums.append(num)
+    return nums
 
 def censor_vowels(word):
     pass  # TODO: replace this line with your code
